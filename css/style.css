@@ -87,12 +87,15 @@ body{
     right: 0;
 }
 /*----------------------------------------------- Слайдер----------------------------------------------------------------*/
+.swiper{
+    position: relative;
+}
+
 .slide{
     min-height: 399px;
     display: flex;
     align-items: center;
     padding-left: 100px;
-    margin-bottom: 50px;
 }
 
 .slide-text-light{
@@ -141,8 +144,24 @@ body{
 .button-primary{
     background: #F47322;
 }
+
+.slider-buttons{
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    display: flex;
+    z-index: 9;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.slider-button{
+    cursor: pointer;
+}
 /*----------------------------------------------- Карточки----------------------------------------------------------------*/
 .promo{ 
+    margin-top: 50px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
@@ -420,7 +439,6 @@ line-height: 19px;
 
 .footer{
     padding: 40px 0;
-    border: 1px solid #000;
     background-color: #f6f6f6;
 }
 
@@ -452,4 +470,57 @@ margin-right: 50px;
 .social-link{
     margin-left: 20px;
     text-decoration: none;
+}
+
+@media(max-width:1260px){
+    .container{
+      max-width: 960px;  
+    }
+    .search-form{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-card{max-width:  48%;
+        /* width: calc(50%-30px); */
+    margin-bottom: 40px;}
+}
+
+@media(max-width:992px){
+    .container{
+        max-width: 760px;
+    }
+    .slide{
+        padding: 60px;
+    }
+    .delivery-card{
+        /* width: calc(50%-30px); */
+    }
+    .footer-logo{margin-right: 40px;}
+}
+@media(max-width:768px){
+    .container{
+        max-width: 560px;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .search-form{
+        order: 5;
+        margin: 15px 0;
+    }
+    .promo{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:576px){
+    .container{
+        max-width: 95%;
+    }
+    
+    .tabs-card{
+        max-width: 100%;
+    }
+    .delivery-card{
+        width: 100%;
+    }
 }
