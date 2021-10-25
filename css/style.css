@@ -10,7 +10,7 @@ body{
     max-width: 1194px;
     margin: auto;
 }
-
+/*----------------------------------------------- Шапка----------------------------------------------------------------*/
 .header{
     display: flex;
     align-items: center;
@@ -59,9 +59,7 @@ body{
     font-size: 14px;
 }
 
-.shopping-cart{
-    width: 49px;
-    height: 49px;
+.shopping-cart{   
     background: #F66A15;
     border-radius: 50%;
     display: flex;
@@ -69,6 +67,8 @@ body{
     align-items: center;
     margin-left: 30px;
     position: relative;
+    width: 49px;
+    height: 49px;
 }
 
 .shopping-counter{
@@ -85,4 +85,371 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
+}
+/*----------------------------------------------- Слайдер----------------------------------------------------------------*/
+.slide{
+    min-height: 399px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    margin-bottom: 50px;
+}
+
+.slide-text-light{
+    background-color: grey;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.slide-summer{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url('../img/summer.png') center/cover no-repeat;
+}
+
+.slide-content{
+    max-width: 400px;
+}
+
+.slide-title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.slide-text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.button{
+    border-radius: 25px;
+    padding: 12px 53px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+.button-primary{
+    background: #F47322;
+}
+/*----------------------------------------------- Карточки----------------------------------------------------------------*/
+.promo{ 
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card{
+    flex: 90%;
+    border-radius: 20px;
+    max-width: 570px;
+    min-height: 380px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 32px;
+}
+
+
+
+.sweet-basket{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/card1.png') center/cover no-repeat;
+}
+
+.minimum-effort{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/card2.png') center/ cover no-repeat;
+}
+
+.card-text-light{
+    color: #fff;
+}
+
+.card-header{
+    flex-grow: 1;
+}
+
+.card-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-top: 4px;
+    margin-bottom: 21px;
+}
+
+.card-description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0;
+    max-width: 170px;
+}
+
+.card-price{
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 8px;
+}
+
+.card-delivery{
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+
+.button-default{
+    background: #FFFFFF;
+    color: #5F5F61;
+}
+/*-----------------------------------------------Маленькие карточки----------------------------------------------------------------*/
+
+.delivery-week{
+padding-top: 10px;
+margin-bottom: 100px;
+}
+
+.section-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+
+.delivery-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.delivery-card{
+    margin-bottom: 30px;
+    position: relative;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.delivery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delivery-tag{
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.tag-1{
+    color: #49494F;
+    background: #D0FD89;
+}
+
+.tag-2{
+    color: #fff;
+    background: #AEBC41;
+}
+
+.tag-3{
+    color: #fff;
+    background: #B86B78;
+}
+.tag-4{
+    color: #fff;
+    background: #D68334;
+}
+.tag-5{
+    color: #fff;
+    background: #CD6255;
+}
+.tag-6{
+    color: #49494F;
+    background: #FFFDBF;
+}
+.tag-7{
+    color: #49494F;
+    background: #F6FDC8;
+}
+.tag-8{
+    color: #49494F;
+    background: #FEF7FE;
+}
+/*----------------------------------------------- Категории блюд----------------------------------------------------------------*/
+.section-grey{
+    background: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.category{
+    margin-bottom: 100px;
+}
+
+.tabs{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 62px;
+}
+
+.tabs-link{
+    text-decoration: none;
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+color: #49494F;
+margin-right: 58px;
+}
+
+.tabs-link.active{
+    color: #F37321;
+}
+
+.tabs-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+.tabs-card{
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.tabs-image{
+    max-width: 100%;
+}
+
+.tabs-card-content{
+    padding: 23px;
+}
+
+.tabs-title{
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+}
+
+.tabs-description{
+    margin: 0 0 36px 0;
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 23px;
+color: #B9B9BE;
+}
+
+.tabs-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs-price{
+    display: block;
+    font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 23px;
+color: #4B4B51;
+margin-bottom: 5px;
+}
+
+.tabs-weight{
+    font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+color: #AAAAB1;
+}
+
+.button-outline{
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 2px solid #F37321;
+    color: #F37321;
+    border-radius: 33px;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+}
+
+.button-center{
+    display: block;
+    margin: auto;
+    width: 315px;
+}
+
+.footer{
+    padding: 40px 0;
+    border: 1px solid #000;
+    background-color: #f6f6f6;
+}
+
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo{
+    margin-right: 50px;
+}
+
+.footer-link{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 23px;
+text-decoration-line: underline;
+color: #000000;
+margin-right: 50px;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social-link{
+    margin-left: 20px;
+    text-decoration: none;
 }
